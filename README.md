@@ -1,36 +1,10 @@
-# Project Name
+# FEC Proxy Server Template
 
-> Guitaur-Centaur - Add to Cart -  proxy
+## Overview
+This is an template proxy server that you can use to quickly display all four individual services on one page, and ensure that your client applications will be able to communicate with their corresponding API. It consists of some middleware that serve up static asset requests, proxy requests for your individual client application bundles, and proxy requests from running client applications to their respective service.
 
-## Related Projects
-
-https://github.com/hrr49-tully
-
-## Table of Contents
-
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
-
-## Usage
-
->  This repo is meant for the proxy server
-
-## Requirements
-
-An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
-
-- Node 6.13.0
-- etc
-
-## Development
-
-### Installing Dependencies
-
-From within the root directory:
-
-```sh
-npm install -g webpack
-npm install
-```
-
+## Instructions
+- Run `nvm use` to switch the version of node required for this project. If this version isn't currently installed, run `nvm install` to install this version
+- Run `npm install` to install all the project dependencies
+- Read the information and instructions in `server/config/services.js` to provide the required configuration information to enable the proxying functionality
+- Run `npm start` or `npm start:dev` to start the server
