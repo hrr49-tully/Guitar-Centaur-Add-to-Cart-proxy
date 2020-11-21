@@ -1,0 +1,3 @@
+[submodule "public/bundles"]
+	path = public/bundles
+	url = https://github.com/hrr49-tully/Guitar-Centaur-RelatedPurchases-Service
