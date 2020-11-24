@@ -1,4 +1,83 @@
+body {
+  max-width: 1500px;
+  margin: auto;
+}
+
+#wrapper {
+  display: grid;
+  column-gap: 1em;
+  row-gap: 1em;
+  margin: 0 auto;
+}
+
 #service1 {
-  padding-top: 100px;
-  margin-top: 200px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  max-width: 600px;
+}
+
+#ATC {
+  padding-top: 11em;
+  column-gap: 10px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+#ATC > div > div:nth-child(1) {
+  min-width: 500px;
+  max-width: 300px;
+}
+
+#ATC > div > div:nth-child(2) {
+  min-width: 300px;
+  margin-left: 1em;
+}
+
+p {
+  margin-left: 80px;
+}
+
+#service3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  max-width: 90%;
+  margin-left: 20px;
+}
+
+#service4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+@media only screen and (max-width: 600px) {
+  #service1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #ATC {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  #ATC > div > div {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100%;
+    margin: auto;
+  }
+
+  #ATC > div > div:nth-child(2) {
+    width: 100%;
+    float: none;
+  }
+
+  #service3, #service1, #service3, #service4, #service3 h3, #ATC > div > div, #ATC > div {
+    display: block;
+    width: 100%;
+  }
 }
