@@ -34,7 +34,7 @@ a:active {
 }
 
 #ATC > div > div:nth-child(1) {
-  min-width: 500px;
+  min-width: 475px;
   max-width: 290px;
 }
 
