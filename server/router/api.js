@@ -14,7 +14,7 @@ router.use(service2.api[1], createProxyMiddleware({ target: service2.url, change
 router.use(service3.api[0], createProxyMiddleware({ target: service3.url, changeOrigin: true }));
 router.use(service3.api[1], createProxyMiddleware({ target: service3.url, changeOrigin: true }));
 
-// router.use(service4.api[0], createProxyMiddleware({ target: service4.url, changeOrigin: true }));
-// router.use(service4.api[1], createProxyMiddleware({ target: service4.url, changeOrigin: true }));
+router.use(service4.api[0], createProxyMiddleware({ target: service4.url, changeOrigin: true }));
+router.use(service4.api[1], createProxyMiddleware({ target: service4.url, changeOrigin: true }));
 
 module.exports = router;
