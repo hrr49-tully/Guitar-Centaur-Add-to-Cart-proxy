@@ -53,7 +53,8 @@ module.exports = {
   },
   service3: {
     api: ['/values', '/styles'],
-    url: 'http://107.22.130.204:3003/',
+    url: 'http://localhost:3003/',
+    // url: 'http://107.22.130.204:3003/',
     bundle: 'bundle.js',
   },
   // service4: {
