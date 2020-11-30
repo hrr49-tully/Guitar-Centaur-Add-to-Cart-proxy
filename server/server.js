@@ -5,9 +5,10 @@ const router = require('./router');
 
 const PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
 const app = express();
-const compression = require('compression');
+var compression = require('compression');
 
 app.use(morgan('dev'));
+app.use(compression());
 app.use(express.static(PUBLIC_DIR));
 
 
@@ -17,7 +18,7 @@ app.use('/bundles', router.bundles);
 // Handling AJAX requests to the API by passing off requests to the api router
 app.use('/api', router.api);
 
-app.use(compression());
+
 
 app.get('/:item_id', (req, res) => {
   res.sendFile(`${PUBLIC_DIR}/index.html`);
