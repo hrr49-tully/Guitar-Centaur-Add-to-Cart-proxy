@@ -58,8 +58,8 @@ module.exports = {
     bundle: 'bundle.js',
   },
   service4: {
-    api: ['/:endpoint', '/guitar/reviews'],
-    url: 'http://ec2-18-219-89-193.us-east-2.compute.amazonaws.com:3004/',
+    api: ['/reviews', '/reviews/stars', '/reviews/sort/upVotes'],
+    url: 'http://18.218.191.39:3004/',
     bundle: 'bundle.js',
   },
 };
