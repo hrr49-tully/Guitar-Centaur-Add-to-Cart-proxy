@@ -5,7 +5,7 @@ const router = require('./router');
 
 const PUBLIC_DIR = path.resolve(__dirname, '..', 'public');
 const app = express();
-var compression = require('compression');
+const compression = require('compression');
 
 app.use(morgan('dev'));
 app.use(compression());
